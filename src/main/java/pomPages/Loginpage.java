@@ -6,9 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Loginpage {
-
-
-
 	//Declaration
 	@FindBy(xpath="//h3[text()='Login']")
 	private WebElement pageHeader;

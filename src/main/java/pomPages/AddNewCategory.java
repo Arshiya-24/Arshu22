@@ -28,7 +28,7 @@ public class AddNewCategory {
 	public String getpageHeader() {
 		return pageHeader.getText();
 	}
-	public void setName(String courseName) {
+	public  void setName(String courseName) {
 		nameTF.sendKeys(courseName);
 	}
 	public String getsuccessMessage()

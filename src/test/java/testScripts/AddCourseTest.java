@@ -19,16 +19,15 @@ public class AddCourseTest extends BaseClass
 		courseListpage.clickNewButton();
 		soft.assertEquals(addCourse.getpageHeader(),  "Add New Course");		
 		Map<String,String> map=excelutility.readFromExcel("Add Course");
-		addCourse.SetName(map.get("Name"));
+		addCourse.setName(map.get("Name"));
  		addCourse.selectCategory(web, map.get("Category"));
  		addCourse.setprice(map.get("price"));
  		addCourse.uploadPhoto(map.get("Photo"));
  		addCourse.setDescription(map.get("Description"), web);
- 		
  		addUser.clickSave();
  		
  		
- 		soft.assertEquals(CourseList.getSuccessMessage(), "Success!");
+ 		soft.assertEquals(courseList.getSuccessMessage(), "Success!");
  		courseList.deleteCourse(web, map.get("Name"));
  		soft.assertEquals(courseList.getSuccessMessage(), "Success!");
  	

@@ -17,8 +17,7 @@ public class Categorypage {
 	private WebElement newButton;
 	
 	private String deletepath="//td[text()='%s']/ancestor::tr/descendant::button[text()='Delete']";
-			
-			@FindBy(name="delete")
+					@FindBy(name="delete")
 	private WebElement deleteButton;
 	
 	@FindBy(xpath="//h4[text()='Success!']")
